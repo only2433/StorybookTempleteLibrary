@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sl="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <com.littlefox.library.view.scale.ScalableLayout
+        android:id="@+id/top_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        sl:scale_base_height="284"
+        sl:scale_base_width="1920" >
+
+        <ImageView
+            android:id="@+id/top_bar_background_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            sl:scale_height="238"
+            sl:scale_left="0"
+            sl:scale_top="0"
+            sl:scale_width="1920" />
+
+        <ImageView
+            android:id="@+id/button_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            sl:scale_height="180"
+            sl:scale_left="1630"
+            sl:scale_top="32"
+            sl:scale_width="226" />
+    </com.littlefox.library.view.scale.ScalableLayout>
+    
+    <com.littlefox.library.view.scale.ScalableLayout 
+        android:id="@+id/thumbnail_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        sl:scale_base_width="866"
+        sl:scale_base_height="530">
+        
+        <ImageView 
+            android:id="@+id/thumbnail_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            
+            sl:scale_top="0"
+            sl:scale_left="0"
+            sl:scale_width="866"
+            sl:scale_height="530"/>
+        <ImageView 
+            android:id="@+id/thumbnail_download_complete_check_border"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/thumbnail_check_border"
+            sl:scale_top="0"
+            sl:scale_left="0"
+            sl:scale_width="866"
+            sl:scale_height="530"
+            android:visibility="gone"/>
+        <ImageView
+            android:id="@+id/thumbnail_downloading_cover"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/thumbnail_download_bg"
+            android:visibility="gone"
+            sl:scale_height="530"
+            sl:scale_left="0"
+            sl:scale_top="0"
+            sl:scale_width="866" />        
+        
+        <ImageView
+            android:id="@+id/thumbnail_play_complete_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/thumbnail_check"
+            sl:scale_top="15"
+            sl:scale_left="781"
+            sl:scale_width="69"
+            sl:scale_height="55"
+            android:visibility="gone"/>
+        
+        <ImageView
+            android:id="@+id/thumbnail_purchase_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/thumbnail_lock"
+            sl:scale_height="145"
+            sl:scale_left="710"
+            sl:scale_top="5"
+            sl:scale_width="145"
+            android:visibility="gone" />
+		<com.littlefox.storybook.lib.view.CircleProgressView
+            android:id="@+id/thumbnail_progress_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            sl:scale_height="145"
+            sl:scale_left="710"
+            sl:scale_top="5"
+            sl:scale_width="145" />
+
+        <ImageView
+            android:id="@+id/thumbnail_idle_cover"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/thumbnail_download_bg"
+            android:visibility="gone"
+            sl:scale_height="530"
+            sl:scale_left="0"
+            sl:scale_top="0"
+            sl:scale_width="866" />
+            
+    </com.littlefox.library.view.scale.ScalableLayout>
+    
+
+    <com.littlefox.library.view.scale.ScalableLayout
+        android:id="@+id/footer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        sl:scale_base_height="484"
+        sl:scale_base_width="1920" >
+
+        <ImageView
+            android:id="@+id/footer_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            sl:scale_height="194"
+            sl:scale_left="800"
+            sl:scale_top="145"
+            sl:scale_width="320" />
+
+        <TextView
+            android:id="@+id/version_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|right"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/device_id_color"
+            sl:scale_height="60"
+            sl:scale_left="0"
+            sl:scale_textsize="33"
+            sl:scale_top="400"
+            sl:scale_width="1858" />
+    </com.littlefox.library.view.scale.ScalableLayout>
+
+</FrameLayout>

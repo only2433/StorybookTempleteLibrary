@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sl="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.littlefox.library.view.scale.ScalableLayout
+        android:id="@+id/background_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        sl:scale_base_height="702"
+        sl:scale_base_width="1578" >
+
+        <ImageView
+            android:id="@+id/payment_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/btn_close_promotion"
+            sl:scale_height="85"
+            sl:scale_left="1456"
+            sl:scale_top="15"
+            sl:scale_width="85" />
+
+        <TextView
+            android:id="@+id/payment_one_buy_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/black"
+            sl:scale_height="100"
+            sl:scale_left="86"
+            sl:scale_textsize="35"
+            sl:scale_top="220"
+            sl:scale_width="407" />
+        <com.littlefox.library.view.text.SeparateTextView
+            android:id="@+id/payment_one_buy_base"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/payment_one_pay_color"
+            android:text="@string/one_pay"
+            sl:scale_height="80"
+            sl:scale_left="86"
+            sl:scale_textsize="50"
+            sl:scale_top="366"
+            sl:scale_width="407" />
+        
+        <TextView
+            android:id="@+id/payment_all_buy_price_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/color_234ed7"
+            sl:scale_height="80"
+            sl:scale_left="840"
+            sl:scale_textsize="60"
+            sl:scale_top="230"
+            sl:scale_width="460" />
+
+
+         <com.littlefox.library.view.text.SeparateTextView
+             android:id="@+id/payment_all_buy_base"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/black"
+            
+            sl:scale_height="90"
+            sl:scale_left="714"
+            sl:scale_textsize="70"
+            sl:scale_top="355"
+            sl:scale_width="717" />
+
+        <ImageView
+            android:id="@+id/payment_one_buy_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/btn_onel_payment"
+            sl:scale_height="110"
+            sl:scale_left="86"
+            sl:scale_top="492"
+            sl:scale_width="407" />
+
+        <TextView
+            android:id="@+id/payment_one_buy_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/btn_purchase"
+            android:textColor="@color/white"
+            sl:scale_height="110"
+            sl:scale_left="86"
+            sl:scale_textsize="45"
+            sl:scale_top="492"
+            sl:scale_width="407" />
+
+        <ImageView
+            android:id="@+id/payment_all_buy_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/btn_all_payment"
+            sl:scale_height="110"
+            sl:scale_left="714"
+            sl:scale_top="492"
+            sl:scale_width="717" />
+
+        <TextView
+            android:id="@+id/payment_all_buy_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:shadowColor="#FF464646"
+            android:shadowDx="1.0"
+            android:shadowDy="1.0"
+            android:shadowRadius="1.0"
+            android:text="@string/btn_purchase"
+            android:textColor="@color/light_yellow"
+            sl:scale_height="110"
+            sl:scale_left="714"
+            sl:scale_textsize="52"
+            sl:scale_top="492"
+            sl:scale_width="717" />
+    </com.littlefox.library.view.scale.ScalableLayout>
+
+</RelativeLayout>

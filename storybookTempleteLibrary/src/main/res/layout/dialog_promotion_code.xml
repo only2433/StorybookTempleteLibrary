@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MissingPrefix">
+    
+    <com.ssomai.android.scalablelayout.ScalableLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:scale_base_width="1210"
+        app:scale_base_height="372"
+        >
+        <ImageView
+            android:id="@+id/promotion_background"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bg_promotion"
+            app:scale_top="0"
+            app:scale_left="0"
+            app:scale_width ="1210"
+            app:scale_height="372"/>
+        <TextView 
+            android:id="@+id/promotion_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/promotion_code_title"
+            android:gravity="center"
+            android:textColor="@color/promotion_title_color"
+            app:scale_left		="430"
+            app:scale_top		= "90"
+            app:scale_width		="320"
+            app:scale_height 	="60"
+            app:scale_textsize	="50"/>
+        
+        <EditText
+            android:id="@+id/promotion_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_box"
+            android:hint="@string/promotion_hint"
+            android:imeOptions="flagNoExtractUi"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:paddingLeft="30px"
+            app:scale_left		="106"
+            app:scale_top		= "173"
+            app:scale_width		="750"
+            app:scale_height 	="107"
+            app:scale_textsize	="50"/>
+        
+        <ImageView
+            android:id="@+id/promotion_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/btn_ok_promotion"
+            app:scale_left		="872"
+            app:scale_top		= "173"
+            app:scale_width		="228"
+            app:scale_height 	="107"
+            />
+        
+          <ImageView
+            android:id="@+id/promotion_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/btn_close_promotion"
+            app:scale_left		="1080"
+            app:scale_top		= "18"
+            app:scale_width		="85"
+            app:scale_height 	="85"
+           />
+        
+    </com.ssomai.android.scalablelayout.ScalableLayout>
+
+</RelativeLayout>

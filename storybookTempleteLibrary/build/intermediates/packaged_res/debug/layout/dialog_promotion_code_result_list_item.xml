@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sl="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" 
+    android:background="@color/white" >
+    
+    <com.littlefox.library.view.scale.ScalableLayout 
+        android:id="@+id/promotion_list_item_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        sl:scale_base_width="1066"
+        sl:scale_base_height="120">
+      <TextView 
+          android:id="@+id/promotion_list_item_text"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:gravity="center_vertical"
+          android:textColor="@color/promotion_title_color"
+          android:ellipsize="end"
+          sl:scale_top="0"
+          sl:scale_left="0"
+          sl:scale_width="950"
+          sl:scale_height="120"
+          sl:scale_textsize="45"/>
+      <ImageView
+          android:id="@+id/promotion_list_item_radio_button"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:src="@drawable/radio_button_off_promotion"
+          sl:scale_top="30"
+          sl:scale_left="1000"
+          sl:scale_width="56"
+          sl:scale_height="56"/>"
+    </com.littlefox.library.view.scale.ScalableLayout>"
+
+</LinearLayout>

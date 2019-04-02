@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 구매 시 패스워드 걸려 있지 않을 경우의 질문 목록(purchase_answers.xml에 같은 인덱스 매칭하여 답을 기술) -->
+    <string-array name="arr_question">
+        <item>14 + 5 = ?</item>
+        <item>22 + 6 = ?</item>
+        <item>56 - 12 = ?</item>
+        <item>42 + 4 = ?</item>
+        <item>68 - 13 = ?</item>
+        <item>41 + 16 = ?</item>
+        <item>50 + 14 = ?</item>
+        <item>71 + 3 = ?</item>
+        <item>62 + 25 = ?</item>
+        <item>95 + 4 = ?</item>
+    </string-array>
+
+</resources>

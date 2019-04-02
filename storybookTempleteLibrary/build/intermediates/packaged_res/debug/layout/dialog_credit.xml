@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sl="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+    
+    <com.littlefox.library.view.scale.ScalableLayout 
+        android:id="@+id/base_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/writer_bg"
+        sl:scale_base_width="1743"
+        sl:scale_base_height="1036">
+        
+        <ImageView 
+            android:id="@+id/credit_close_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/writer_close_btn"
+            sl:scale_top="25"
+            sl:scale_left="1570"
+            sl:scale_width="124"
+            sl:scale_height="124"/>
+        <ImageView 
+            android:id="@+id/credit_title_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           
+            sl:scale_top="244"
+            sl:scale_left="234"
+            sl:scale_width="350"
+            sl:scale_height="350"/> 
+            
+        <ImageView 
+            android:id="@+id/credit_text_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           
+            sl:scale_top="640"
+            sl:scale_left="218"
+            sl:scale_width="382"
+            sl:scale_height="114"/> 
+            
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/writer_line"
+            sl:scale_height="617"
+            sl:scale_left="724"
+            sl:scale_top="209"
+            sl:scale_width="2" />
+            
+            <ScrollView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                sl:scale_width="836"
+                sl:scale_height="632"
+                sl:scale_left="764"
+                sl:scale_top="207"
+                >
+                <com.littlefox.library.view.scale.ScalableLayout 
+                    android:id="@+id/credit_staff_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    sl:scale_base_width="836"
+                    sl:scale_base_height="632"
+                    >
+                    <ImageView
+                        android:id="@+id/credit_staff_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitXY"
+                        sl:scale_width="836"
+                        sl:scale_height="632"
+                        />
+                    
+                </com.littlefox.library.view.scale.ScalableLayout>
+                   	
+            </ScrollView>
+</com.littlefox.library.view.scale.ScalableLayout>
+
+
+</LinearLayout>

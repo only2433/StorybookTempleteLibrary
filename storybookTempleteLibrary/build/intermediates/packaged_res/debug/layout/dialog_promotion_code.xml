@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sl="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+    
+    <com.littlefox.library.view.scale.ScalableLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        sl:scale_base_width="1210"
+        sl:scale_base_height="372"
+        >
+        <ImageView
+            android:id="@+id/promotion_background"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bg_promotion"
+            sl:scale_top="0"
+            sl:scale_left="0"
+            sl:scale_width ="1210"
+            sl:scale_height="372"/>
+        <TextView 
+            android:id="@+id/promotion_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/promotion_code_title"
+            android:gravity="center"
+            android:textColor="@color/promotion_title_color"
+            sl:scale_left		="430"
+            sl:scale_top		= "90"
+            sl:scale_width		="320"
+            sl:scale_height 	="60"
+            sl:scale_textsize	="50"/>
+        
+        <EditText
+            android:id="@+id/promotion_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_box"
+            android:hint="@string/promotion_hint"
+            android:imeOptions="flagNoExtractUi"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:paddingLeft="30px"
+            sl:scale_left		="106"
+            sl:scale_top		= "173"
+            sl:scale_width		="750"
+            sl:scale_height 	="107"
+            sl:scale_textsize	="50"/>
+        
+        <ImageView
+            android:id="@+id/promotion_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/btn_ok_promotion"
+            sl:scale_left		="872"
+            sl:scale_top		= "173"
+            sl:scale_width		="228"
+            sl:scale_height 	="107"
+            />
+        
+          <ImageView
+            android:id="@+id/promotion_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/btn_close_promotion"
+            sl:scale_left		="1080"
+            sl:scale_top		= "18"
+            sl:scale_width		="85"
+            sl:scale_height 	="85"
+           />
+        
+    </com.littlefox.library.view.scale.ScalableLayout>
+
+</RelativeLayout>

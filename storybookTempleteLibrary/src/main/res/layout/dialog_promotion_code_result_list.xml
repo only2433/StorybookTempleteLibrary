@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MissingPrefix">
+    
+    <com.ssomai.android.scalablelayout.ScalableLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:scale_base_width="1300"
+        app:scale_base_height="930"
+        >
+        
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/list_bg_promotion"
+            app:scale_top="0"
+            app:scale_left="0"
+            app:scale_width="1300"
+            app:scale_height="930"/>
+         <TextView
+            android:id="@+id/promotion_list_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/promotion_list_title"
+            android:textColor="@color/promotion_title_color"
+            android:gravity="center"
+            app:scale_top="0"
+            app:scale_left="60"
+            app:scale_width="1180"
+            app:scale_height="132"
+            app:scale_textsize="50"/>
+        <ImageView
+            android:id="@+id/promotion_exit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/btn_close_promotion"
+            app:scale_top="26"
+            app:scale_left="1155"
+            app:scale_width="85"
+            app:scale_height="85"/>
+        <ImageView 
+            android:id="@+id/promotion_list_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/list_box_promotion"
+            android:scaleType="fitXY"
+            app:scale_top="132"
+            app:scale_left="60"
+            app:scale_width="1180"
+            app:scale_height="757"/>
+        <ListView
+            android:id="@+id/promotion_listview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="#00000000"
+            android:divider="@drawable/list_line_promotion"
+            app:scale_top="155"
+            app:scale_left="90"
+            app:scale_width="1120"
+            app:scale_height="595"/>
+        
+        <ImageView
+            android:id="@+id/promotion_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/btn_ok_promotion"
+            app:scale_top="759"
+            app:scale_left="535"
+            app:scale_width="230"
+            app:scale_height="110"/>
+    </com.ssomai.android.scalablelayout.ScalableLayout>
+
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.only2433:LittlefoxViewLibrary:1.0.14@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/LittlefoxViewLibrary-1.0.14.aar/2b1b8a582efb08847652611577f2d877/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/LittlefoxViewLibrary-1.0.14.aar/2b1b8a582efb08847652611577f2d877/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/LittlefoxViewLibrary-1.0.14.aar/2b1b8a582efb08847652611577f2d877/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.only2433/LittlefoxViewLibrary/1.0.14/7f7e2125c8d15578c5c95fd9c3b89c946c2ef502/LittlefoxViewLibrary-1.0.14-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

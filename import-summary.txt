@@ -1,0 +1,108 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+From CommonSystemLibrary:
+* proguard-project.txt
+From CommonViewLibrary:
+* .idea\
+* .idea\CommonViewLibrary.iml
+* .idea\compiler.xml
+* .idea\copyright\
+* .idea\copyright\profiles_settings.xml
+* .idea\encodings.xml
+* .idea\misc.xml
+* .idea\modules.xml
+* .idea\vcs.xml
+* .idea\workspace.xml
+* proguard-project.txt
+From LittleFoxLogMonitor:
+* LittleFoxLogMonitor.iml
+* proguard-project.txt
+From StorybookTempleteLibrary:
+* ic_launcher-web.png
+* proguard-project.txt
+From android-support-v7-appcompat:
+* README.txt
+From google-play-services_lib:
+* README.txt
+* google-play-services_lib.iml
+* proguard.txt
+From recyclerview:
+* README.txt
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+In LittleFoxLogMonitor:
+* AndroidManifest.xml => littleFoxLogMonitor\src\main\AndroidManifest.xml
+* assets\ => littleFoxLogMonitor\src\main\assets
+* res\ => littleFoxLogMonitor\src\main\res\
+* src\ => littleFoxLogMonitor\src\main\java\
+In CommonSystemLibrary:
+* AndroidManifest.xml => commonSystemLibrary\src\main\AndroidManifest.xml
+* assets\ => commonSystemLibrary\src\main\assets
+* libs\android-support-v4.jar => commonSystemLibrary\libs\android-support-v4.jar
+* libs\gson-2.2.2.jar => commonSystemLibrary\libs\gson-2.2.2.jar
+* res\ => commonSystemLibrary\src\main\res\
+* src\ => commonSystemLibrary\src\main\java\
+In android-support-v7-appcompat:
+* AndroidManifest.xml => androidsupportv7appcompat\src\main\AndroidManifest.xml
+* assets\ => androidsupportv7appcompat\src\main\assets
+* libs\android-support-v4.jar => androidsupportv7appcompat\libs\android-support-v4.jar
+* res\ => androidsupportv7appcompat\src\main\res\
+* src\ => androidsupportv7appcompat\src\main\java
+* src\.readme => androidsupportv7appcompat\src\main\resources\.readme
+In CommonViewLibrary:
+* AndroidManifest.xml => commonViewLibrary\src\main\AndroidManifest.xml
+* assets\ => commonViewLibrary\src\main\assets
+* libs\android-support-v4.jar => commonViewLibrary\libs\android-support-v4.jar
+* libs\gson-2.2.2.jar => commonViewLibrary\libs\gson-2.2.2.jar
+* res\ => commonViewLibrary\src\main\res\
+* src\ => commonViewLibrary\src\main\java\
+In google-play-services_lib:
+* AndroidManifest.xml => googleplayservices_lib\src\main\AndroidManifest.xml
+* assets\ => googleplayservices_lib\src\main\assets
+* libs\android-support-v4.jar => googleplayservices_lib\libs\android-support-v4.jar
+* libs\google-play-services.jar => googleplayservices_lib\libs\google-play-services.jar
+* res\ => googleplayservices_lib\src\main\res\
+* src\ => googleplayservices_lib\src\main\java\
+In recyclerview:
+* AndroidManifest.xml => recyclerview\src\main\AndroidManifest.xml
+* assets\ => recyclerview\src\main\assets
+* res\ => recyclerview\src\main\res\
+* src\ => recyclerview\src\main\java
+In StorybookTempleteLibrary:
+* AndroidManifest.xml => storybookTempleteLibrary\src\main\AndroidManifest.xml
+* assets\ => storybookTempleteLibrary\src\main\assets
+* libs\android-support-v4.jar => storybookTempleteLibrary\libs\android-support-v4.jar
+* libs\glide-3.6.1.jar => storybookTempleteLibrary\libs\glide-3.6.1.jar
+* libs\gson-2.2.2.jar => storybookTempleteLibrary\libs\gson-2.2.2.jar
+* libs\httpclient-4.5.jar => storybookTempleteLibrary\libs\httpclient-4.5.jar
+* libs\httpcore-4.4.1.jar => storybookTempleteLibrary\libs\httpcore-4.4.1.jar
+* lint.xml => storybookTempleteLibrary\lint.xml
+* res\ => storybookTempleteLibrary\src\main\res\
+* src\ => storybookTempleteLibrary\src\main\java\
+* src\com\android\vending\billing\IInAppBillingService.aidl => storybookTempleteLibrary\src\main\aidl\com\android\vending\billing\IInAppBillingService.aidl
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

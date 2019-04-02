@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" 
+    android:background="@color/white"
+    tools:ignore="MissingPrefix">
+    
+    <com.ssomai.android.scalablelayout.ScalableLayout 
+        android:id="@+id/promotion_list_item_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:scale_base_width="1066"
+        app:scale_base_height="120">
+      <TextView 
+          android:id="@+id/promotion_list_item_text"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:gravity="center_vertical"
+          android:textColor="@color/promotion_title_color"
+          android:ellipsize="end"
+          app:scale_top="0"
+          app:scale_left="0"
+          app:scale_width="950"
+          app:scale_height="120"
+          app:scale_textsize="45"/>
+      <ImageView
+          android:id="@+id/promotion_list_item_radio_button"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:src="@drawable/radio_button_off_promotion"
+          app:scale_top="30"
+          app:scale_left="1000"
+          app:scale_width="56"
+          app:scale_height="56"/>"
+    </com.ssomai.android.scalablelayout.ScalableLayout>"
+
+</LinearLayout>

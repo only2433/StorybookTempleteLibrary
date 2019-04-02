@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:ignore="MissingPrefix">
+    
+    <com.ssomai.android.scalablelayout.ScalableLayout 
+        android:id="@+id/base_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/writer_bg"
+        app:scale_base_width="1743"
+        app:scale_base_height="1036">
+        
+        <ImageView 
+            android:id="@+id/credit_close_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/writer_close_btn"
+            app:scale_top="25"
+            app:scale_left="1570"
+            app:scale_width="124"
+            app:scale_height="124"/>
+        <ImageView 
+            android:id="@+id/credit_title_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           
+            app:scale_top="244"
+            app:scale_left="234"
+            app:scale_width="350"
+            app:scale_height="350"/> 
+            
+        <ImageView 
+            android:id="@+id/credit_text_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           
+            app:scale_top="640"
+            app:scale_left="218"
+            app:scale_width="382"
+            app:scale_height="114"/> 
+            
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/writer_line"
+            app:scale_height="617"
+            app:scale_left="724"
+            app:scale_top="209"
+            app:scale_width="2" />
+            
+            <ScrollView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:scale_width="836"
+                app:scale_height="632"
+                app:scale_left="764"
+                app:scale_top="207"
+                >
+                <com.ssomai.android.scalablelayout.ScalableLayout 
+                    android:id="@+id/credit_staff_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:scale_base_width="836"
+                    app:scale_base_height="632"
+                    >
+                    <ImageView
+                        android:id="@+id/credit_staff_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitXY"
+                        app:scale_width="836"
+                        app:scale_height="632"
+                        />
+                    
+                </com.ssomai.android.scalablelayout.ScalableLayout>
+                   	
+            </ScrollView>
+</com.ssomai.android.scalablelayout.ScalableLayout>
+
+
+</LinearLayout>
