@@ -1,35 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:sl="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:orientation="vertical" >
+    android:orientation="vertical"
+    tools:ignore="MissingPrefix">
     
-    <com.littlefox.library.view.scale.ScalableLayout 
+    <com.ssomai.android.scalablelayout.ScalableLayout 
         android:id="@+id/root_thumb_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        sl:scale_base_width="423"
-        sl:scale_base_height="259">
+        app:scale_base_width="423"
+        app:scale_base_height="259">
         
         <ImageView 
             android:id="@+id/thumbnail_image"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             
-            sl:scale_top="0"
-            sl:scale_left="0"
-            sl:scale_width="423"
-            sl:scale_height="259"/>
+            app:scale_top="0"
+            app:scale_left="0"
+            app:scale_width="423"
+            app:scale_height="259"/>
         <ImageView 
             android:id="@+id/thumbnail_download_complete_check_border"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/thumbnail_check_border"
-            sl:scale_top="0"
-            sl:scale_left="0"
-            sl:scale_width="423"
-            sl:scale_height="259"
+            app:scale_top="0"
+            app:scale_left="0"
+            app:scale_width="423"
+            app:scale_height="259"
             android:visibility="gone"/>
         <ImageView
             android:id="@+id/thumbnail_downloading_cover"
@@ -37,10 +39,10 @@
             android:layout_height="wrap_content"
             android:src="@drawable/thumbnail_download_bg"
             android:visibility="gone"
-            sl:scale_height="259"
-            sl:scale_left="0"
-            sl:scale_top="0"
-            sl:scale_width="423" />        
+            app:scale_height="259"
+            app:scale_left="0"
+            app:scale_top="0"
+            app:scale_width="423" />        
         
         <ImageView
             android:id="@+id/thumbnail_play_complete_image"
@@ -48,10 +50,10 @@
             android:layout_height="wrap_content"
             android:src="@drawable/tablet_thumbnail_check"
             android:scaleType="fitXY"
-            sl:scale_top="0"
-            sl:scale_left="337"
-            sl:scale_width="92"
-            sl:scale_height="92"
+            app:scale_top="0"
+            app:scale_left="337"
+            app:scale_width="92"
+            app:scale_height="92"
             android:visibility="gone"/>
         
         <ImageView
@@ -59,19 +61,19 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/tablet_thumbnail_lock"
-            sl:scale_height="92"
-            sl:scale_left="327"
-            sl:scale_top="5"
-            sl:scale_width="92"
+            app:scale_height="92"
+            app:scale_left="327"
+            app:scale_top="5"
+            app:scale_width="92"
             android:visibility="gone" />
 		<com.littlefox.storybook.lib.view.CircleProgressView
             android:id="@+id/thumbnail_progress_image"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            sl:scale_height="92"
-            sl:scale_left="327"
-            sl:scale_top="5"
-            sl:scale_width="92" />
+            app:scale_height="92"
+            app:scale_left="327"
+            app:scale_top="5"
+            app:scale_width="92" />
 
         <ImageView
             android:id="@+id/thumbnail_idle_cover"
@@ -79,10 +81,10 @@
             android:layout_height="wrap_content"
             android:src="@drawable/thumbnail_download_bg"
             android:visibility="gone"
-            sl:scale_height="259"
-            sl:scale_left="0"
-            sl:scale_top="0"
-            sl:scale_width="423" />
+            app:scale_height="259"
+            app:scale_left="0"
+            app:scale_top="0"
+            app:scale_width="423" />
             
-    </com.littlefox.library.view.scale.ScalableLayout>
+    </com.ssomai.android.scalablelayout.ScalableLayout>
 </LinearLayout>

@@ -1,6 +1,7 @@
 package com.littlefox.storybook.lib.analytics;
 
 
+import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
 
@@ -18,6 +19,7 @@ public class GoogleAnalyticsHelper
 
 	public static GoogleAnalyticsHelper sGoogleAnalyticsHelper = null;
 	private FirebaseAnalytics mFirebaseAnalytics;
+	private Context mContext;
 	
 	public static GoogleAnalyticsHelper getInstance(Context context)
 	{
@@ -35,9 +37,16 @@ public class GoogleAnalyticsHelper
 	 */
 	public void init(Context context)
 	{
+		mContext = context;
 		mFirebaseAnalytics = FirebaseAnalytics.getInstance(context);
 	}
 
+
+	public void sendCurrentAppView(String information)
+	{
+		Log.f("information : "+ information);
+		mFirebaseAnalytics.setCurrentScreen((Activity)mContext, information, null);
+	}
 
 	/**
 	 * 현재 사용자의 이벤트를 전달한다.

@@ -1,52 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:sl="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical"
+    tools:ignore="MissingPrefix">
 
-    <com.littlefox.library.view.scale.ScalableLayout
+    <com.ssomai.android.scalablelayout.ScalableLayout
         android:id="@+id/top_bar_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        sl:scale_base_height="278"
-        sl:scale_base_width="1920" >
+        app:scale_base_height="278"
+        app:scale_base_width="1920" >
 
         <ImageView
             android:id="@+id/top_bar_background_image"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:scaleType="fitXY"
-            sl:scale_height="238"
-            sl:scale_left="0"
-            sl:scale_top="0"
-            sl:scale_width="1920" />
+            app:scale_height="238"
+            app:scale_left="0"
+            app:scale_top="0"
+            app:scale_width="1920" />
 
         <ImageView
             android:id="@+id/button_menu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            sl:scale_height="180"
-            sl:scale_left="1630"
-            sl:scale_top="32"
-            sl:scale_width="226" />
-    </com.littlefox.library.view.scale.ScalableLayout>
+            app:scale_height="180"
+            app:scale_left="1630"
+            app:scale_top="32"
+            app:scale_width="226" />
+    </com.ssomai.android.scalablelayout.ScalableLayout>
 
-    <com.littlefox.library.view.scale.ScalableLayout
+    <com.ssomai.android.scalablelayout.ScalableLayout
         android:id="@+id/thumbnail_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        sl:scale_base_height="259"
-        sl:scale_base_width="423" >
+        app:scale_base_height="259"
+        app:scale_base_width="423" >
 
         <ImageView
             android:id="@+id/thumbnail_image"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            sl:scale_height="259"
-            sl:scale_left="0"
-            sl:scale_top="0"
-            sl:scale_width="423" />
+            app:scale_height="259"
+            app:scale_left="0"
+            app:scale_top="0"
+            app:scale_width="423" />
 
         <ImageView
             android:id="@+id/thumbnail_download_complete_check_border"
@@ -54,10 +56,10 @@
             android:layout_height="wrap_content"
             android:src="@drawable/thumbnail_check_border"
             android:visibility="gone"
-            sl:scale_height="259"
-            sl:scale_left="0"
-            sl:scale_top="0"
-            sl:scale_width="423" />
+            app:scale_height="259"
+            app:scale_left="0"
+            app:scale_top="0"
+            app:scale_width="423" />
 
         <ImageView
             android:id="@+id/thumbnail_downloading_cover"
@@ -65,10 +67,10 @@
             android:layout_height="wrap_content"
             android:src="@drawable/thumbnail_download_bg"
             android:visibility="gone"
-            sl:scale_height="259"
-            sl:scale_left="0"
-            sl:scale_top="0"
-            sl:scale_width="423" />
+            app:scale_height="259"
+            app:scale_left="0"
+            app:scale_top="0"
+            app:scale_width="423" />
 
         <ImageView
             android:id="@+id/thumbnail_play_complete_image"
@@ -77,10 +79,10 @@
             android:scaleType="fitXY"
             android:src="@drawable/tablet_thumbnail_check"
             android:visibility="gone"
-            sl:scale_height="92"
-            sl:scale_left="337"
-            sl:scale_top="0"
-            sl:scale_width="92" />
+            app:scale_height="92"
+            app:scale_left="337"
+            app:scale_top="0"
+            app:scale_width="92" />
 
         <ImageView
             android:id="@+id/thumbnail_purchase_image"
@@ -88,19 +90,19 @@
             android:layout_height="wrap_content"
             android:src="@drawable/tablet_thumbnail_lock"
             android:visibility="gone"
-            sl:scale_height="92"
-            sl:scale_left="327"
-            sl:scale_top="5"
-            sl:scale_width="92" />
+            app:scale_height="92"
+            app:scale_left="327"
+            app:scale_top="5"
+            app:scale_width="92" />
 
         <com.littlefox.storybook.lib.view.CircleProgressView
             android:id="@+id/thumbnail_progress_image"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            sl:scale_height="92"
-            sl:scale_left="327"
-            sl:scale_top="5"
-            sl:scale_width="92" />
+            app:scale_height="92"
+            app:scale_left="327"
+            app:scale_top="5"
+            app:scale_width="92" />
 
         <ImageView
             android:id="@+id/thumbnail_idle_cover"
@@ -108,27 +110,27 @@
             android:layout_height="wrap_content"
             android:src="@drawable/thumbnail_download_bg"
             android:visibility="gone"
-            sl:scale_height="259"
-            sl:scale_left="0"
-            sl:scale_top="0"
-            sl:scale_width="423" />
-    </com.littlefox.library.view.scale.ScalableLayout>
+            app:scale_height="259"
+            app:scale_left="0"
+            app:scale_top="0"
+            app:scale_width="423" />
+    </com.ssomai.android.scalablelayout.ScalableLayout>
 
-    <com.littlefox.library.view.scale.ScalableLayout
+    <com.ssomai.android.scalablelayout.ScalableLayout
         android:id="@+id/footer_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        sl:scale_base_height="484"
-        sl:scale_base_width="1920" >
+        app:scale_base_height="484"
+        app:scale_base_width="1920" >
 
         <ImageView
             android:id="@+id/footer_logo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            sl:scale_height="194"
-            sl:scale_left="800"
-            sl:scale_top="145"
-            sl:scale_width="320" />
+            app:scale_height="194"
+            app:scale_left="800"
+            app:scale_top="145"
+            app:scale_width="320" />
 
         <TextView
             android:id="@+id/version_text"
@@ -138,11 +140,11 @@
             android:singleLine="true"
             android:text=""
             android:textColor="@color/device_id_color"
-            sl:scale_height="60"
-            sl:scale_left="0"
-            sl:scale_textsize="33"
-            sl:scale_top="400"
-            sl:scale_width="1860" />
-    </com.littlefox.library.view.scale.ScalableLayout>
+            app:scale_height="60"
+            app:scale_left="0"
+            app:scale_textsize="33"
+            app:scale_top="400"
+            app:scale_width="1860" />
+    </com.ssomai.android.scalablelayout.ScalableLayout>
 
 </FrameLayout>

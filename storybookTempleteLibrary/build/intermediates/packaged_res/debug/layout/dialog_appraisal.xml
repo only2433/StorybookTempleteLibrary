@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:sl="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:orientation="vertical" >
-    <com.littlefox.library.view.scale.ScalableLayout 
+    android:orientation="vertical"
+    tools:ignore="MissingPrefix">
+    
+    <com.ssomai.android.scalablelayout.ScalableLayout
         android:id="@+id/dialog_root_appraisal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        sl:scale_base_width="1210"
-        sl:scale_base_height="722"
+        app:scale_base_width="1210"
+        app:scale_base_height="722"
         >
         
         <ImageView
@@ -17,10 +20,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/btn_close_appraisal"
-            sl:scale_top="20"
-            sl:scale_left="1085"
-            sl:scale_width="85"
-            sl:scale_height="85"/>
+            app:scale_top="20"
+            app:scale_left="1085"
+            app:scale_width="85"
+            app:scale_height="85"/>
          <TextView
             android:id="@+id/btn_star_give_appraisal"
             android:layout_width="wrap_content"
@@ -29,20 +32,20 @@
             android:textColor="@color/white"
             android:text="@string/title_star_give"
             android:gravity="center"
-            sl:scale_top="448"
-            sl:scale_left="386"
-            sl:scale_width="437"
-            sl:scale_height="110"
-            sl:scale_textsize="45"/>
+            app:scale_top="448"
+            app:scale_left="386"
+            app:scale_width="437"
+            app:scale_height="110"
+            app:scale_textsize="45"/>
          
          <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/btn_line_appraisal"
-            sl:scale_top="620"
-            sl:scale_left="525"
-            sl:scale_width="162"
-            sl:scale_height="1"/>
-    </com.littlefox.library.view.scale.ScalableLayout>"
+            app:scale_top="620"
+            app:scale_left="525"
+            app:scale_width="162"
+            app:scale_height="1"/>
+    </com.ssomai.android.scalablelayout.ScalableLayout>
 
 </LinearLayout>

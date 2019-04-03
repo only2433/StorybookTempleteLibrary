@@ -1,27 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:sl="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" >
+    android:layout_height="match_parent"
+    tools:ignore="MissingPrefix">
 
-    <com.littlefox.library.view.scale.ScalableLayout
+    <com.ssomai.android.scalablelayout.ScalableLayout
         android:id="@+id/background_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        sl:scale_base_height="702"
-        sl:scale_base_width="1578" >
+        app:scale_base_height="702"
+        app:scale_base_width="1578" >
 
         <ImageView
             android:id="@+id/payment_close"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/btn_close_promotion"
-            sl:scale_height="85"
-            sl:scale_left="1456"
-            sl:scale_top="15"
-            sl:scale_width="85" />
+            app:scale_height="85"
+            app:scale_left="1456"
+            app:scale_top="15"
+            app:scale_width="85" />
 
         <TextView
             android:id="@+id/payment_one_buy_title"
@@ -29,11 +31,11 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:textColor="@color/black"
-            sl:scale_height="100"
-            sl:scale_left="86"
-            sl:scale_textsize="35"
-            sl:scale_top="220"
-            sl:scale_width="407" />
+            app:scale_height="100"
+            app:scale_left="86"
+            app:scale_textsize="35"
+            app:scale_top="220"
+            app:scale_width="407" />
         <com.littlefox.library.view.text.SeparateTextView
             android:id="@+id/payment_one_buy_base"
             android:layout_width="wrap_content"
@@ -41,11 +43,11 @@
             android:gravity="center"
             android:textColor="@color/payment_one_pay_color"
             android:text="@string/one_pay"
-            sl:scale_height="80"
-            sl:scale_left="86"
-            sl:scale_textsize="50"
-            sl:scale_top="366"
-            sl:scale_width="407" />
+            app:scale_height="80"
+            app:scale_left="86"
+            app:scale_textsize="50"
+            app:scale_top="366"
+            app:scale_width="407" />
         
         <TextView
             android:id="@+id/payment_all_buy_price_title"
@@ -53,11 +55,11 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:textColor="@color/color_234ed7"
-            sl:scale_height="80"
-            sl:scale_left="840"
-            sl:scale_textsize="60"
-            sl:scale_top="230"
-            sl:scale_width="460" />
+            app:scale_height="80"
+            app:scale_left="840"
+            app:scale_textsize="60"
+            app:scale_top="230"
+            app:scale_width="460" />
 
 
          <com.littlefox.library.view.text.SeparateTextView
@@ -67,21 +69,21 @@
             android:gravity="center"
             android:textColor="@color/black"
             
-            sl:scale_height="90"
-            sl:scale_left="714"
-            sl:scale_textsize="70"
-            sl:scale_top="355"
-            sl:scale_width="717" />
+            app:scale_height="90"
+            app:scale_left="714"
+            app:scale_textsize="70"
+            app:scale_top="355"
+            app:scale_width="717" />
 
         <ImageView
             android:id="@+id/payment_one_buy_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/btn_onel_payment"
-            sl:scale_height="110"
-            sl:scale_left="86"
-            sl:scale_top="492"
-            sl:scale_width="407" />
+            app:scale_height="110"
+            app:scale_left="86"
+            app:scale_top="492"
+            app:scale_width="407" />
 
         <TextView
             android:id="@+id/payment_one_buy_name"
@@ -90,21 +92,21 @@
             android:gravity="center"
             android:text="@string/btn_purchase"
             android:textColor="@color/white"
-            sl:scale_height="110"
-            sl:scale_left="86"
-            sl:scale_textsize="45"
-            sl:scale_top="492"
-            sl:scale_width="407" />
+            app:scale_height="110"
+            app:scale_left="86"
+            app:scale_textsize="45"
+            app:scale_top="492"
+            app:scale_width="407" />
 
         <ImageView
             android:id="@+id/payment_all_buy_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/btn_all_payment"
-            sl:scale_height="110"
-            sl:scale_left="714"
-            sl:scale_top="492"
-            sl:scale_width="717" />
+            app:scale_height="110"
+            app:scale_left="714"
+            app:scale_top="492"
+            app:scale_width="717" />
 
         <TextView
             android:id="@+id/payment_all_buy_name"
@@ -117,11 +119,11 @@
             android:shadowRadius="1.0"
             android:text="@string/btn_purchase"
             android:textColor="@color/light_yellow"
-            sl:scale_height="110"
-            sl:scale_left="714"
-            sl:scale_textsize="52"
-            sl:scale_top="492"
-            sl:scale_width="717" />
-    </com.littlefox.library.view.scale.ScalableLayout>
+            app:scale_height="110"
+            app:scale_left="714"
+            app:scale_textsize="52"
+            app:scale_top="492"
+            app:scale_width="717" />
+    </com.ssomai.android.scalablelayout.ScalableLayout>
 
 </RelativeLayout>

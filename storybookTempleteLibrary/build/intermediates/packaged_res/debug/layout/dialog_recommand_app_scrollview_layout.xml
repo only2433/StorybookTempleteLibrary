@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:sl="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    
-    android:orientation="vertical" >
+    android:orientation="vertical"
+    tools:ignore="MissingPrefix">
 
-    <com.littlefox.library.view.scale.ScalableLayout
+    <com.ssomai.android.scalablelayout.ScalableLayout
         android:id="@+id/dialog_root_recommand_app"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/recommend_bg"
-        sl:scale_base_height="1036"
-        sl:scale_base_width="1743" >
+        app:scale_base_height="1036"
+        app:scale_base_width="1743" >
 
         <TextView
             android:id="@+id/recommand_title"
@@ -21,11 +22,11 @@
             android:gravity="center_horizontal"
             android:text="@string/recommand_main_title"
             android:textColor="@color/black"
-            sl:scale_height="65"
-            sl:scale_left="0"
-            sl:scale_textsize="48"
-            sl:scale_top="49"
-            sl:scale_width="1743" />
+            app:scale_height="65"
+            app:scale_left="0"
+            app:scale_textsize="48"
+            app:scale_top="49"
+            app:scale_width="1743" />
 
         <ImageView
             android:id="@+id/recommand_app_close_btn"
@@ -33,10 +34,10 @@
             android:layout_height="wrap_content"
             android:foreground="?attr/selectableItemBackground"
             android:src="@drawable/btn_close_promotion"
-            sl:scale_height="85"
-            sl:scale_left="1602"
-            sl:scale_top="31"
-            sl:scale_width="85" />
+            app:scale_height="85"
+            app:scale_left="1602"
+            app:scale_top="31"
+            app:scale_width="85" />
 
         <TextView
             android:id="@+id/recommand_popular_tab_title"
@@ -46,11 +47,11 @@
             android:gravity="center"
             android:text="@string/recommand_popular_title"
             android:textColor="@color/white"
-            sl:scale_height="86"
-            sl:scale_left="72"
-            sl:scale_textsize="38"
-            sl:scale_top="146"
-            sl:scale_width="532" />
+            app:scale_height="86"
+            app:scale_left="72"
+            app:scale_textsize="38"
+            app:scale_top="146"
+            app:scale_width="532" />
 
         <TextView
             android:id="@+id/recommand_newest_tab_title"
@@ -60,11 +61,11 @@
             android:gravity="center"
             android:text="@string/recommand_newest_title"
             android:textColor="@color/black"
-            sl:scale_height="86"
-            sl:scale_left="604"
-            sl:scale_textsize="38"
-            sl:scale_top="146"
-            sl:scale_width="532" />
+            app:scale_height="86"
+            app:scale_left="604"
+            app:scale_textsize="38"
+            app:scale_top="146"
+            app:scale_width="532" />
 
         <TextView
             android:id="@+id/recommand_name_tab_title"
@@ -74,30 +75,30 @@
             android:gravity="center"
             android:text="@string/recommand_name_title"
             android:textColor="@color/black"
-            sl:scale_height="86"
-            sl:scale_left="1136"
-            sl:scale_textsize="38"
-            sl:scale_top="146"
-            sl:scale_width="532" />
+            app:scale_height="86"
+            app:scale_left="1136"
+            app:scale_textsize="38"
+            app:scale_top="146"
+            app:scale_width="532" />
         
       <ScrollView
         android:id="@+id/recommand_scroll_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        sl:scale_top="270"
-        sl:scale_left="0"
-        sl:scale_width="1743"
-        sl:scale_height="710" >
+        app:scale_top="270"
+        app:scale_left="0"
+        app:scale_width="1743"
+        app:scale_height="710" >
 
-        <com.littlefox.library.view.scale.ScalableLayout
+        <com.ssomai.android.scalablelayout.ScalableLayout
             android:id="@+id/add_recommand_list_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            sl:scale_base_height="700"
-            sl:scale_base_width="1743" >
-        </com.littlefox.library.view.scale.ScalableLayout>
+            app:scale_base_height="700"
+            app:scale_base_width="1743" >
+        </com.ssomai.android.scalablelayout.ScalableLayout>
     </ScrollView>
-    </com.littlefox.library.view.scale.ScalableLayout>
+    </com.ssomai.android.scalablelayout.ScalableLayout>
 
 
 
