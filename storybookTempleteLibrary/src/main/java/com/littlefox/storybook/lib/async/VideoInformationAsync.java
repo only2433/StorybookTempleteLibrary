@@ -51,7 +51,7 @@ public class VideoInformationAsync extends AsyncTask<Void, Integer, Boolean>
 		{
 			
 			isRunning = true;
-			String response = NetworkUtil.requestServerPair(mContext,Common.BASE_URI+Common.URL_STORY_LIST, null, NetworkUtil.GET_METHOD);
+			String response = NetworkUtil.requestServerPair(mContext,Common.BASE_URI+Common.URL_STORY_LIST, null, NetworkUtil.POST_METHOD);
 			mVideoBaseResult = new Gson().fromJson(response, VideoBaseResult.class);
 		}
 		
