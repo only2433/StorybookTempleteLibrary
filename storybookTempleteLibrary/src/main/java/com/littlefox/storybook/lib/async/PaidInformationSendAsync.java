@@ -38,10 +38,6 @@ public class PaidInformationSendAsync extends AsyncTask<Void, Integer, Boolean>
 			
 			try
 			{
-				/*JsonObject jsonRoot = new JsonObject();
-				jsonRoot.addProperty("device_id", (String) CommonUtils.getInstance(mContext).getSharedPreference(Common.PARAMS_APP_USER_PK, Common.TYPE_PARAMS_STRING));
-				jsonRoot.addProperty("product_code", mPaidItemCode);*/
-
 				ContentValues list = new ContentValues();
 				list.put("device_id", (String) CommonUtils.getInstance(mContext).getSharedPreference(Common.PARAMS_APP_USER_PK, Common.TYPE_PARAMS_STRING));
 				list.put("product_code", mPaidItemCode);

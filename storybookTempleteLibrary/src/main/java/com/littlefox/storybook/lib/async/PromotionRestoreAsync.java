@@ -49,9 +49,6 @@ public class PromotionRestoreAsync extends AsyncTask<Void, Integer, PromotionRes
 		synchronized (mSync)
 		{
 			isRunning = true;
-			
-			/*JsonObject jsonRoot = new JsonObject();
-			jsonRoot.addProperty("device_id", (String)CommonUtils.getInstance(mContext).getSharedPreference(Common.PARAMS_APP_USER_PK, Common.TYPE_PARAMS_STRING));*/
 
 			ContentValues list = new ContentValues();
 			list.put("device_id", (String)CommonUtils.getInstance(mContext).getSharedPreference(Common.PARAMS_APP_USER_PK, Common.TYPE_PARAMS_STRING));

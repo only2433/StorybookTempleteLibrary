@@ -60,10 +60,7 @@ public class SharedInformationAsync extends AsyncTask<Void, Integer, SharedInfor
 			
 			try
 			{
-				/*JsonObject jsonRoot = new JsonObject();
-				jsonRoot.addProperty("index", mMovieIndex);
-				jsonRoot.addProperty("snsGubun", mAppName);
-				jsonRoot.addProperty("locale", Locale.getDefault().toString());*/
+
 
 				ContentValues list = new ContentValues();
 				list.put("index", mMovieIndex);

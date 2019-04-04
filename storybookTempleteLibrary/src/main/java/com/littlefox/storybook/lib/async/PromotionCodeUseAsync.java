@@ -53,12 +53,7 @@ public class PromotionCodeUseAsync extends AsyncTask<Void, Integer, Boolean>
 			
 			try
 			{
-				/*JsonObject jsonRoot = new JsonObject();
-				jsonRoot.addProperty("promo_code", mPromotionCode);
-				jsonRoot.addProperty("device_id", (String) CommonUtils.getInstance(mContext).getSharedPreference(Common.PARAMS_APP_USER_PK, Common.TYPE_PARAMS_STRING));
-				
-				if(mUseProductCode.equals("") == false)
-					jsonRoot.addProperty("product_code", mUseProductCode);*/
+
 				ContentValues list = new ContentValues();
 				list.put("promo_code", mPromotionCode);
 				list.put("device_id", (String) CommonUtils.getInstance(mContext).getSharedPreference(Common.PARAMS_APP_USER_PK, Common.TYPE_PARAMS_STRING));

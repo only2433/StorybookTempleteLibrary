@@ -48,8 +48,6 @@ public class PromotionInformationAsync extends AsyncTask<Void, Integer, Promotio
 		synchronized (mSync)
 		{
 			isRunning = true;
-			/*JsonObject jsonRoot = new JsonObject();
-			jsonRoot.addProperty("promo_code", mPromoCode);*/
 
 			ContentValues list = new ContentValues();
 			list.put("promo_code", mPromoCode);

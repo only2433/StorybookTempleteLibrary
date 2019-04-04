@@ -55,14 +55,6 @@ public class InitAppAsync extends AsyncTask<Void, Integer, InitItemResult>
 		synchronized (mSync) 
 		{
 			isRunning = true;
-			
-			/*JsonObject jsonRoot = new JsonObject();
-			jsonRoot.addProperty("uuid", Secure.getString(mContext.getContentResolver(), Secure.ANDROID_ID));
-			jsonRoot.addProperty("device_name", android.os.Build.MODEL);
-			jsonRoot.addProperty("device_type", CommonUtils.getInstance(mContext).isTablet() == false ? "Phone" : "Tablet");
-			jsonRoot.addProperty("device_os", "Android");
-			jsonRoot.addProperty("locale", Locale.getDefault().toString());
-			jsonRoot.addProperty("push_addr", (String) CommonUtils.getInstance(mContext).getSharedPreference(Common.PARAMS_GCM_REGISTERATION_ID, Common.TYPE_PARAMS_STRING));*/
 
 			ContentValues list = new ContentValues();
 			list.put("uuid", Secure.getString(mContext.getContentResolver(), Secure.ANDROID_ID));

@@ -12,6 +12,6 @@ public final class R {
     public static final class string {
         private string() {}
 
-        public static int fcm_fallback_notification_channel_label = 0x7f150048;
+        public static int fcm_fallback_notification_channel_label = 0x7f150055;
     }
 }

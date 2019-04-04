@@ -12,32 +12,32 @@ public final class R {
     public static final class attr {
         private attr() {}
 
-        public static int scale_base_height = 0x7f040113;
-        public static int scale_base_width = 0x7f040114;
-        public static int scale_height = 0x7f040115;
-        public static int scale_left = 0x7f040116;
-        public static int scale_left_baseposition = 0x7f040117;
-        public static int scale_textsize = 0x7f040118;
-        public static int scale_top = 0x7f040119;
-        public static int scale_top_baseposition = 0x7f04011a;
-        public static int scale_width = 0x7f04011b;
-        public static int textview_wrapcontent_direction = 0x7f040162;
-        public static int textview_wrapcontent_movesiblings = 0x7f040163;
-        public static int textview_wrapcontent_resizesurrounded = 0x7f040164;
+        public static int scale_base_height = 0x7f04016e;
+        public static int scale_base_width = 0x7f04016f;
+        public static int scale_height = 0x7f040170;
+        public static int scale_left = 0x7f040171;
+        public static int scale_left_baseposition = 0x7f040172;
+        public static int scale_textsize = 0x7f040173;
+        public static int scale_top = 0x7f040174;
+        public static int scale_top_baseposition = 0x7f040175;
+        public static int scale_width = 0x7f040176;
+        public static int textview_wrapcontent_direction = 0x7f0401e0;
+        public static int textview_wrapcontent_movesiblings = 0x7f0401e1;
+        public static int textview_wrapcontent_resizesurrounded = 0x7f0401e2;
     }
     public static final class id {
         private id() {}
 
         public static int bottom = 0x7f0c0021;
         public static int center = 0x7f0c0026;
-        public static int left = 0x7f0c005b;
-        public static int right = 0x7f0c0092;
-        public static int top = 0x7f0c00cf;
+        public static int left = 0x7f0c005f;
+        public static int right = 0x7f0c0099;
+        public static int top = 0x7f0c00db;
     }
     public static final class styleable {
         private styleable() {}
 
-        public static int[] ScalableLayout = { 0x7f040113, 0x7f040114, 0x7f040115, 0x7f040116, 0x7f040118, 0x7f040119, 0x7f04011b, 0x7f040162, 0x7f040163, 0x7f040164 };
+        public static int[] ScalableLayout = { 0x7f04016e, 0x7f04016f, 0x7f040170, 0x7f040171, 0x7f040173, 0x7f040174, 0x7f040176, 0x7f0401e0, 0x7f0401e1, 0x7f0401e2 };
         public static int ScalableLayout_scale_base_height = 0;
         public static int ScalableLayout_scale_base_width = 1;
         public static int ScalableLayout_scale_height = 2;
@@ -48,11 +48,11 @@ public final class R {
         public static int ScalableLayout_textview_wrapcontent_direction = 7;
         public static int ScalableLayout_textview_wrapcontent_movesiblings = 8;
         public static int ScalableLayout_textview_wrapcontent_resizesurrounded = 9;
-        public static int[] TextView = { 0x7f040162, 0x7f040163, 0x7f040164 };
+        public static int[] TextView = { 0x7f0401e0, 0x7f0401e1, 0x7f0401e2 };
         public static int TextView_textview_wrapcontent_direction = 0;
         public static int TextView_textview_wrapcontent_movesiblings = 1;
         public static int TextView_textview_wrapcontent_resizesurrounded = 2;
-        public static int[] View = { 0x10100da, 0x1010000, 0x7f0400f8, 0x7f0400f9, 0x7f040115, 0x7f040116, 0x7f040117, 0x7f040118, 0x7f040119, 0x7f04011a, 0x7f04011b, 0x7f040165 };
+        public static int[] View = { 0x10100da, 0x1010000, 0x7f040153, 0x7f040154, 0x7f040170, 0x7f040171, 0x7f040172, 0x7f040173, 0x7f040174, 0x7f040175, 0x7f040176, 0x7f0401e3 };
         public static int View_android_focusable = 0;
         public static int View_android_theme = 1;
         public static int View_paddingEnd = 2;
