@@ -276,8 +276,7 @@ public class CommonUtils
 		if (Build.VERSION.SDK_INT >= 19)
 		{
 			return checkTabletDeviceWithScreenSize(sContext) &&
-					checkTabletDeviceWithProperties() &&
-					checkTabletDeviceWithUserAgent(sContext);
+					checkTabletDeviceWithProperties();
 		}
 		else
 		{
