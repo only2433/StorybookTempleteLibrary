@@ -1,11 +1,6 @@
 package com.littlefox.storybook.lib.view;
 
 
-
-import com.littlefox.library.storybooktempletelibrary.R;
-import com.littlefox.logmonitor.Log;
-import com.littlefox.storybook.lib.common.CommonUtils;
-
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
@@ -13,6 +8,10 @@ import android.graphics.Paint;
 import android.graphics.RectF;
 import android.util.AttributeSet;
 import android.widget.ImageView;
+
+import com.littlefox.library.storybooktempletelibrary.R;
+import com.littlefox.storybook.lib.api.StorybookTempleteAPI;
+import com.littlefox.storybook.lib.common.CommonUtils;
 
 public class CircleProgressView extends ImageView
 {
@@ -55,7 +54,7 @@ public class CircleProgressView extends ImageView
 		mPaint.setColor(getResources().getColor(R.color.percent_color));
 		mPaint.setAntiAlias(true);
 
-		if(CommonUtils.getInstance(mContext).isTablet())
+		if(StorybookTempleteAPI.IS_TABLET)
 		{
 			mCurrentBitmap = CommonUtils.getInstance(mContext).drawableToBitmap(getResources().getDrawable(R.drawable.tablet_thumbnail_download));
 			mCurrentBitmap = Bitmap.createScaledBitmap(mCurrentBitmap, CommonUtils.getInstance(mContext).getPixel(92), CommonUtils.getInstance(mContext).getPixel(92), true);
@@ -69,7 +68,7 @@ public class CircleProgressView extends ImageView
 	
 		mCurrentCoverBitmap = CommonUtils.getInstance(mContext).drawableToBitmap(getResources().getDrawable(R.drawable.thumbnail_download_s));
 		
-		if(CommonUtils.getInstance(mContext).isTablet())
+		if(StorybookTempleteAPI.IS_TABLET)
 		{
 			mCurrentCoverBitmap = Bitmap.createScaledBitmap(mCurrentCoverBitmap, CommonUtils.getInstance(mContext).getPixel(65), CommonUtils.getInstance(mContext).getPixel(65), true);
 			mProgressRectF = new RectF(CommonUtils.getInstance(mContext).getPixel(7),CommonUtils.getInstance(mContext).getPixel(4), CommonUtils.getInstance(mContext).getPixel(88), CommonUtils.getInstance(mContext).getPixel(86));
@@ -103,7 +102,7 @@ public class CircleProgressView extends ImageView
 		canvas.drawBitmap(mCurrentBitmap, 0, 0, null);
 		canvas.drawArc(mProgressRectF, -90, mCurrentPercent * (MAX_ARC/100), true, mPaint);
 		
-		if(CommonUtils.getInstance(mContext).isTablet())
+		if(StorybookTempleteAPI.IS_TABLET)
 		{
 			canvas.drawBitmap(mCurrentCoverBitmap, CommonUtils.getInstance(mContext).getPixel(15), CommonUtils.getInstance(mContext).getPixel(14), null);
 		}

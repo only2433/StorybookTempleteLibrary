@@ -12,6 +12,7 @@ import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
 import com.littlefox.library.storybooktempletelibrary.R;
 import com.littlefox.library.view.progress.CircleProgressView;
+import com.littlefox.storybook.lib.api.StorybookTempleteAPI;
 import com.littlefox.storybook.lib.common.Common;
 import com.littlefox.storybook.lib.common.CommonUtils;
 import com.littlefox.storybook.lib.object.SharedVideoInfo;
@@ -63,7 +64,7 @@ public class ThumbnailAdapter extends BaseAdapter
 		ViewHolder holder;
 		if(convertView == null)
 		{
-			if(CommonUtils.getInstance(mContext).isTablet())
+			if(StorybookTempleteAPI.IS_TABLET)
 			{
 				view = mLayoutInflater.inflate(R.layout.thumbnail_item_tablet, null);
 			}

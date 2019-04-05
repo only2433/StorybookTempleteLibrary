@@ -14,6 +14,7 @@ import com.bumptech.glide.request.RequestOptions;
 import com.littlefox.library.storybooktempletelibrary.R;
 import com.littlefox.logmonitor.Log;
 import com.littlefox.storybook.lib.adapter.listener.StorybookListItemListener;
+import com.littlefox.storybook.lib.api.StorybookTempleteAPI;
 import com.littlefox.storybook.lib.common.CommonUtils;
 import com.littlefox.storybook.lib.common.Font;
 import com.littlefox.storybook.lib.object.SharedVideoInfo;
@@ -212,7 +213,7 @@ public class StorybookListRecyclerAdapter extends RecyclerView.Adapter<Storybook
 	{
 		View view;
 		
-		if(CommonUtils.getInstance(mContext).isTablet())
+		if(StorybookTempleteAPI.IS_TABLET)
 			view = LayoutInflater.from(container.getContext()).inflate(R.layout.thumbnaill_recycler_view_tablet_item, container, false);
 		else
 			view = LayoutInflater.from(container.getContext()).inflate(R.layout.thumbnaill_recycler_view_item, container, false);

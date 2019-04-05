@@ -1,12 +1,5 @@
 package com.littlefox.storybook.lib.dialog;
 
-import java.util.Random;
-
-import com.littlefox.library.storybooktempletelibrary.R;
-import com.littlefox.storybook.lib.common.Common;
-import com.littlefox.storybook.lib.common.CommonUtils;
-import com.littlefox.storybook.lib.common.Font;
-
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -18,6 +11,14 @@ import android.view.inputmethod.EditorInfo;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import com.littlefox.library.storybooktempletelibrary.R;
+import com.littlefox.storybook.lib.api.StorybookTempleteAPI;
+import com.littlefox.storybook.lib.common.Common;
+import com.littlefox.storybook.lib.common.CommonUtils;
+import com.littlefox.storybook.lib.common.Font;
+
+import java.util.Random;
 
 
 public class ParentConfirmAlertDialog extends TempleteAlertDialog
@@ -93,7 +94,7 @@ public class ParentConfirmAlertDialog extends TempleteAlertDialog
 		_TitleText = new TextView(mContext);
 		_TitleText.setTextColor(mContext.getResources().getColor(R.color.black));
 		
-		if(CommonUtils.getInstance(mContext).isMinimumDisplayWidth() && CommonUtils.getInstance(mContext).isTablet())
+		if(CommonUtils.getInstance(mContext).isMinimumDisplayWidth() && StorybookTempleteAPI.IS_TABLET)
 		{
 			_TitleText.setTextSize(CommonUtils.getInstance(mContext).getPixel(40));
 		}

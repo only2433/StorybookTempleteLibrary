@@ -7,6 +7,7 @@ import android.provider.Settings.Secure;
 
 import com.google.gson.Gson;
 import com.littlefox.logmonitor.Log;
+import com.littlefox.storybook.lib.api.StorybookTempleteAPI;
 import com.littlefox.storybook.lib.async.listener.AsyncListener;
 import com.littlefox.storybook.lib.common.Common;
 import com.littlefox.storybook.lib.common.CommonUtils;
@@ -59,7 +60,7 @@ public class InitAppAsync extends AsyncTask<Void, Integer, InitItemResult>
 			ContentValues list = new ContentValues();
 			list.put("uuid", Secure.getString(mContext.getContentResolver(), Secure.ANDROID_ID));
 			list.put("device_name", android.os.Build.MODEL);
-			list.put("device_type", CommonUtils.getInstance(mContext).isTablet() == false ? "Phone" : "Tablet");
+			list.put("device_type", StorybookTempleteAPI.IS_TABLET == false ? "Phone" : "Tablet");
 			list.put("device_os", "Android");
 			list.put("locale", Locale.getDefault().toString());
 			list.put("push_addr", (String) CommonUtils.getInstance(mContext).getSharedPreference(Common.PARAMS_GCM_REGISTERATION_ID, Common.TYPE_PARAMS_STRING));

@@ -1066,7 +1066,7 @@ public class CommonUtils
 	public int getMoveScrollValue(int position)
 	{
 		int movecount;
-		if(isTablet())
+		if(StorybookTempleteAPI.IS_TABLET)
 		{
 			movecount = position / Common.TABLET_THUMB_MAX_IN_LINE;
 			

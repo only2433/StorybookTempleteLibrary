@@ -1,12 +1,9 @@
 package com.littlefox.storybook.lib.api;
 
-import java.io.File;
-
-import com.littlefox.storybook.lib.common.Common;
-import com.littlefox.storybook.lib.object.DisPlayMetricsObject;
-
 import android.content.Context;
 import android.os.Environment;
+
+import com.littlefox.storybook.lib.object.DisPlayMetricsObject;
 
 public class StorybookTempleteAPI
 {
@@ -60,6 +57,8 @@ public class StorybookTempleteAPI
 	public static String PATH_JSON		= "";
 	public static String PATH_THUMBNAIL = "";
 
+	public static boolean IS_TABLET = false;
+
 	public static String PATH_VIBRATOR_ROOT	= PATH_APP_ROOT;
 	public static final String PATH_EXTERNAL_VIBRATOR_ROOT = Environment.getExternalStorageDirectory()+"/LittleFox/Vibrator/";
 	public static String PATH_APP_RECOMMOND_ICON_ROOT = "";
@@ -86,12 +85,12 @@ public class StorybookTempleteAPI
 		return sStorybookTempleteAPI;
 	}
 	
-	public void init(String appName, String packageName, String httpHeaderName, String oneSkuItemName, String allSkuItemName, String inAppBillingKey,String googleAnaylticsID,  DisPlayMetricsObject disPlayMetricsObject)
+	public void init(String appName, String packageName, String httpHeaderName, String oneSkuItemName, String allSkuItemName, String inAppBillingKey,String googleAnaylticsID,  DisPlayMetricsObject disPlayMetricsObject, boolean isTablet)
 	{
-		setInformation(appName, packageName, httpHeaderName, inAppBillingKey, oneSkuItemName, allSkuItemName, googleAnaylticsID, disPlayMetricsObject);
+		setInformation(appName, packageName, httpHeaderName, inAppBillingKey, oneSkuItemName, allSkuItemName, googleAnaylticsID, disPlayMetricsObject, isTablet);
 	}
 	
-	private void setInformation(String appName, String packageName, String httpHeaderName, String inAppBillingKey, String oneSkuItemName, String allSkuItemName, String googleAnaylticsID, DisPlayMetricsObject disPlayMetricsObject)
+	private void setInformation(String appName, String packageName, String httpHeaderName, String inAppBillingKey, String oneSkuItemName, String allSkuItemName, String googleAnaylticsID, DisPlayMetricsObject disPlayMetricsObject, boolean isTablet)
 	{
 		StorybookTempleteAPI.APP_NAME = appName;
 		StorybookTempleteAPI.PACKAGE_NAME = packageName;
@@ -108,7 +107,9 @@ public class StorybookTempleteAPI
 		StorybookTempleteAPI.PATH_VIBRATOR_ROOT = PATH_APP_ROOT;
 		StorybookTempleteAPI.PATH_VIDEO_INFORMATION_ROOT = PATH_APP_ROOT;
 		StorybookTempleteAPI.PATH_APP_RECOMMOND_ICON_ROOT = PATH_APP_ROOT + "icons/"; 
-		StorybookTempleteAPI.PATH_THUMBNAIL = PATH_APP_ROOT + "thumbnail/"; 
+		StorybookTempleteAPI.PATH_THUMBNAIL = PATH_APP_ROOT + "thumbnail/";
+
+		StorybookTempleteAPI.IS_TABLET = isTablet;
 	}
 	
 }
