@@ -12,6 +12,7 @@ import android.view.View;
 import android.view.Window;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
@@ -189,7 +190,7 @@ public class RecommandAppScrollDialog extends Dialog
 					break;
 				}
 
-				final FrameLayout base = (FrameLayout)inflater.inflate(R.layout.dialog_recommand_app_item, null);
+				final LinearLayout base = (LinearLayout)inflater.inflate(R.layout.dialog_recommand_app_item, null);
 				base.setOnClickListener(new OnClickIndexListener(positionCount)
 				{
 
