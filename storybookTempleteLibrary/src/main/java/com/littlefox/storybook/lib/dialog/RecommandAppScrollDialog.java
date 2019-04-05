@@ -10,7 +10,6 @@ import android.os.Message;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.Window;
-import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
@@ -262,7 +261,7 @@ public class RecommandAppScrollDialog extends Dialog
 					break;
 				}
 
-				FrameLayout base = (FrameLayout)_RecommandItemAddLayout.getChildAt(positionCount);
+				LinearLayout base = (LinearLayout)_RecommandItemAddLayout.getChildAt(positionCount);
 				
 
 				appFrontImage = (ImageView)base.findViewById(R.id.front_title_image);
