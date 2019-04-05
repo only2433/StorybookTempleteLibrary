@@ -269,6 +269,7 @@ public class RecommandAppScrollDialog extends Dialog
 				
 
 				Glide.with(mContext)
+						.setDefaultRequestOptions(null)
 				.load(mRecommandAppInformationList.get(positionCount).getFileDownloadPath())
 				.transition(withCrossFade())
 				.into(appFrontImage);
