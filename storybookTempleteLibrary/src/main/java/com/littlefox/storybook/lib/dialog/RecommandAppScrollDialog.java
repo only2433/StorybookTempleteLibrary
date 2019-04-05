@@ -16,9 +16,11 @@ import android.widget.ScrollView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.RequestOptions;
 import com.littlefox.library.storybooktempletelibrary.R;
 import com.littlefox.library.view.animator.ViewAnimator;
 import com.littlefox.library.view.listener.OnClickIndexListener;
+import com.littlefox.logmonitor.Log;
 import com.littlefox.storybook.lib.analytics.GoogleAnalyticsHelper;
 import com.littlefox.storybook.lib.api.StorybookTempleteAPI;
 import com.littlefox.storybook.lib.common.Common;
@@ -85,6 +87,7 @@ public class RecommandAppScrollDialog extends Dialog
 	private boolean isBackCardVisible = false;
 	
 	private boolean isLocaleKorea = false;
+	private RequestOptions mRequestOptions;
 
 	public RecommandAppScrollDialog(Context context , ArrayList<RecommandAppInformation> recommandAppInformationList)
 	{
@@ -233,6 +236,7 @@ public class RecommandAppScrollDialog extends Dialog
 	
 	private void changeRecommandItemInformation(int type)
 	{
+	    Log.f("type : "+type);
 		final int COLUMN_ANIMATION_DELAY_DURATION = 100;
 		final int SHOW_ITEM_VISIBLE_COUNT = 10;
 		int positionTotalCount = mRecommandAppInformationList.size();
@@ -265,14 +269,15 @@ public class RecommandAppScrollDialog extends Dialog
 				appFrontTitle = (TextView)base.findViewById(R.id.front_title_text);
 
 				appFrontTitle.setTypeface(Font.getInstance(mContext).getRobotoMedium());
-				
-				
+
+                mRequestOptions = new RequestOptions();
+                mRequestOptions.placeholder(null);
 
 				Glide.with(mContext)
-						.setDefaultRequestOptions(null)
-				.load(mRecommandAppInformationList.get(positionCount).getFileDownloadPath())
-				.transition(withCrossFade())
-				.into(appFrontImage);
+                        .setDefaultRequestOptions(mRequestOptions)
+				        .load(mRecommandAppInformationList.get(positionCount).getFileDownloadPath())
+				        .transition(withCrossFade())
+				        .into(appFrontImage);
 				
 				appFrontTitle.setText(mRecommandAppInformationList.get(positionCount).getAppName());
 				
