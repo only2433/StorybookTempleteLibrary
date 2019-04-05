@@ -20,6 +20,7 @@
             android:id="@+id/front_title_image"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:scaleType="fitXY"
             app:scale_height="236"
             app:scale_left="26"
             app:scale_top="24"
