@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -12,16 +12,26 @@
         android:id="@+id/front_item_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/recommend_app_box"
         app:scale_base_height="368"
-        app:scale_base_width="297" >
+        app:scale_base_width="300" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/recommend_app_box"
+            android:scaleType="fitXY"
+            app:scale_height="368"
+            app:scale_left="0"
+            app:scale_top="0"
+            app:scale_width="300" />
 
         <ImageView
             android:id="@+id/front_title_image"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:scaleType="fitXY"
             app:scale_height="236"
-            app:scale_left="26"
+            app:scale_left="32"
             app:scale_top="24"
             app:scale_width="236" />
 
@@ -32,7 +42,7 @@
             android:gravity="center"
             android:textColor="@color/black"
             app:scale_height="80"
-            app:scale_left="26"
+            app:scale_left="32"
             app:scale_textsize="30"
             app:scale_top="270"
             app:scale_width="236" />
@@ -41,10 +51,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:scale_height="87"
-            app:scale_left="192"
-            app:scale_top="9"
+            app:scale_left="186"
+            app:scale_top="24"
             app:scale_width="83" />
-"
+
     </com.ssomai.android.scalablelayout.ScalableLayout>
 
-</FrameLayout>
+</LinearLayout>

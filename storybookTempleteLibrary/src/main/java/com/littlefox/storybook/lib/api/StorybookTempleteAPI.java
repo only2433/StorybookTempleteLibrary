@@ -5,6 +5,8 @@ import android.os.Environment;
 
 import com.littlefox.storybook.lib.object.DisPlayMetricsObject;
 
+import java.io.File;
+
 public class StorybookTempleteAPI
 {
 	private Context mContext;
@@ -75,6 +77,7 @@ public class StorybookTempleteAPI
 	
 	
 	private static StorybookTempleteAPI sStorybookTempleteAPI = null;
+	private static Context sContext = null;
 	
 	public static StorybookTempleteAPI getInstance(Context context)
 	{
@@ -82,6 +85,7 @@ public class StorybookTempleteAPI
 		{
 			sStorybookTempleteAPI = new StorybookTempleteAPI();
 		}
+		sContext = context;
 		return sStorybookTempleteAPI;
 	}
 	
@@ -101,7 +105,7 @@ public class StorybookTempleteAPI
 		StorybookTempleteAPI.ANALYTICS_PROPERTY_ID = googleAnaylticsID;
 
 		StorybookTempleteAPI.PATH_EXTERNAL_VIDEO_INFORMATION_ROOT = Environment.getExternalStorageDirectory()+"/LittleFox/VideoInformation/"+StorybookTempleteAPI.APP_NAME+"/"; 
-		StorybookTempleteAPI.PATH_APP_ROOT =  "/data/data/" + packageName + "/files/";
+		StorybookTempleteAPI.PATH_APP_ROOT =  sContext.getFilesDir().getAbsolutePath()+ File.separator + "files/";
 		StorybookTempleteAPI.PATH_MP4 = StorybookTempleteAPI.PATH_APP_ROOT + "mp4/";
 		StorybookTempleteAPI.PATH_JSON = StorybookTempleteAPI.PATH_APP_ROOT + "json/";
 		StorybookTempleteAPI.PATH_VIBRATOR_ROOT = PATH_APP_ROOT;
