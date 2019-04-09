@@ -9,6 +9,7 @@ import android.os.Build;
 import com.google.gson.Gson;
 import com.littlefox.logmonitor.Log;
 import com.littlefox.storybook.lib.api.StorybookTempleteAPI;
+import com.littlefox.storybook.lib.async.listener.AsyncListener;
 import com.littlefox.storybook.lib.object.ItemResult;
 
 import java.io.BufferedInputStream;
@@ -303,7 +304,7 @@ public class NetworkUtil
 
 
 
-	public static boolean downloadFile(String url, String dest_file_path)
+	public static boolean downloadFile(String url, String dest_file_path, AsyncListener listener)
 	{
 		int  count = 0;
 		try
@@ -342,10 +343,12 @@ public class NetworkUtil
 		}
 		catch (FileNotFoundException e)
 		{
+			listener.onErrorListener("-1", e.getMessage());
 			return false;
 		}
 		catch (Exception e)
 		{
+			listener.onErrorListener("-1", e.getMessage());
 			return false;
 		}
 		

@@ -1,13 +1,10 @@
 package com.littlefox.storybook.lib.download;
 
-import java.util.ArrayList;
-
 import android.content.Context;
 import android.os.AsyncTask;
 
 import com.littlefox.storybook.lib.async.listener.AsyncListener;
-import com.littlefox.storybook.lib.common.Common;
-import com.littlefox.storybook.lib.common.CommonUtils;
+import com.littlefox.storybook.lib.common.NetworkUtil;
 
 public class DownloadAsync extends AsyncTask<Void, Integer, Object>
 {
@@ -51,11 +48,10 @@ public class DownloadAsync extends AsyncTask<Void, Integer, Object>
 		{
 			isRunning = true;
 
-			boolean result = CommonUtils.getInstance(mContext).downloadFile(mDownloadUrl, mSaveFilePath);
+			boolean result = NetworkUtil.downloadFile(mDownloadUrl, mSaveFilePath, mAsyncListener);
 
 			if (result == false)
 			{
-				mAsyncListener.onErrorListener("-1", "Network Error");
 				return false;
 			}
 
