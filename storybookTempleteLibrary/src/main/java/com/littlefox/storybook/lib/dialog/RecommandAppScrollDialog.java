@@ -403,25 +403,27 @@ public class RecommandAppScrollDialog extends Dialog
 			_RecommandTabPopularTitleText.setTextColor(mContext.getResources().getColor(R.color.white));
 			_RecommandTabNewestTitleText.setTextColor(mContext.getResources().getColor(R.color.black));
 			_RecommandTabNameTitleText.setTextColor(mContext.getResources().getColor(R.color.black));
-			_RecommandTabPopularTitleText.setBackground(mContext.getResources().getDrawable(R.drawable.recommend_tab01_on, null));
-			_RecommandTabNewestTitleText.setBackground(mContext.getResources().getDrawable(R.drawable.recommend_tab02_off, null));
-			_RecommandTabNameTitleText.setBackground(mContext.getResources().getDrawable(R.drawable.recommend_tab03_off, null));
+
+			_RecommandTabPopularTitleText.setBackground(mContext.getResources().getDrawable(R.drawable.recommend_tab01_on));
+			_RecommandTabNewestTitleText.setBackground(mContext.getResources().getDrawable(R.drawable.recommend_tab02_off));
+			_RecommandTabNameTitleText.setBackground(mContext.getResources().getDrawable(R.drawable.recommend_tab03_off));
+
 			break;
 		case TYPE_NEWEST:
 			_RecommandTabPopularTitleText.setTextColor(mContext.getResources().getColor(R.color.black));
 			_RecommandTabNewestTitleText.setTextColor(mContext.getResources().getColor(R.color.white));
 			_RecommandTabNameTitleText.setTextColor(mContext.getResources().getColor(R.color.black));
-			_RecommandTabPopularTitleText.setBackground(mContext.getResources().getDrawable(R.drawable.recommend_tab01_off, null));
-			_RecommandTabNewestTitleText.setBackground(mContext.getResources().getDrawable(R.drawable.recommend_tab02_on, null));
-			_RecommandTabNameTitleText.setBackground(mContext.getResources().getDrawable(R.drawable.recommend_tab03_off, null));
+			_RecommandTabPopularTitleText.setBackground(mContext.getResources().getDrawable(R.drawable.recommend_tab01_off));
+			_RecommandTabNewestTitleText.setBackground(mContext.getResources().getDrawable(R.drawable.recommend_tab02_on));
+			_RecommandTabNameTitleText.setBackground(mContext.getResources().getDrawable(R.drawable.recommend_tab03_off));
 			break;
 		case TYPE_NAME:
 			_RecommandTabPopularTitleText.setTextColor(mContext.getResources().getColor(R.color.black));
 			_RecommandTabNewestTitleText.setTextColor(mContext.getResources().getColor(R.color.black));
 			_RecommandTabNameTitleText.setTextColor(mContext.getResources().getColor(R.color.white));
-			_RecommandTabPopularTitleText.setBackground(mContext.getResources().getDrawable(R.drawable.recommend_tab01_off, null));
-			_RecommandTabNewestTitleText.setBackground(mContext.getResources().getDrawable(R.drawable.recommend_tab02_off, null));
-			_RecommandTabNameTitleText.setBackground(mContext.getResources().getDrawable(R.drawable.recommend_tab03_on, null));
+			_RecommandTabPopularTitleText.setBackground(mContext.getResources().getDrawable(R.drawable.recommend_tab01_off));
+			_RecommandTabNewestTitleText.setBackground(mContext.getResources().getDrawable(R.drawable.recommend_tab02_off));
+			_RecommandTabNameTitleText.setBackground(mContext.getResources().getDrawable(R.drawable.recommend_tab03_on));
 			break;
 		}
 	}
