@@ -7,7 +7,7 @@ import com.littlefox.storybook.lib.object.DisPlayMetricsObject;
 
 public class StorybookTempleteAPI
 {
-	private Context mContext;
+	private static Context sContext;
 	
 	/**
 	 * 사용하려는 패키지 네임
@@ -78,6 +78,7 @@ public class StorybookTempleteAPI
 	
 	public static StorybookTempleteAPI getInstance(Context context)
 	{
+		sContext = context;
 		if(sStorybookTempleteAPI == null)
 		{
 			sStorybookTempleteAPI = new StorybookTempleteAPI();
@@ -110,6 +111,11 @@ public class StorybookTempleteAPI
 		StorybookTempleteAPI.PATH_THUMBNAIL = PATH_APP_ROOT + "thumbnail/";
 
 		StorybookTempleteAPI.IS_TABLET = isTablet;
+	}
+
+	public static Context getApplicationContext()
+	{
+		return sContext;
 	}
 	
 }
